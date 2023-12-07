@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "coffee-light";
+  overflow-X: hidden;
+  overflow-y: scroll;
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  transition: 0.3s;
+  background-color: var(--whiteF);
+}
+
+a {
+  color: var(--whiteF);
+  text-decoration: none;
+}/*# sourceMappingURL=general-formatty.css.map */

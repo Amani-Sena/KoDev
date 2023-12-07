@@ -1,0 +1,79 @@
+.banner-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 38rem;
+    background-color: var(--gray);
+    z-index: 2;
+}
+
+.banner-bottom {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 38rem;
+    margin-top: 4.2rem;
+    background: url(../img/BannerBottom.png) bottom no-repeat;
+    background-size: 100% auto;
+}
+
+.info-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    position: absolute;
+    z-index: 4;
+}
+
+.info-banner h1 {
+    font-family: "coffee";
+    text-align: left;
+    color: white;
+    margin-top: -4rem;
+}
+
+.info-banner h2 {
+    font-family: "coffee";
+    text-align: right;
+    margin-top: 0.6rem;
+    color: white;
+}
+
+.info-banner em {
+    color: var(--purple);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--whiteF);
+}
+
+.banner-index img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.banner-index .banner-bottom {
+    min-width: 100vw;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width:900px) {
+    .banner-bottom {
+        width: 100%;
+    }
+
+    .info-banner h1 {
+        font-size: 40px;
+    }
+
+    .info-banner h2 {
+        font-size: 30px;
+    }
+}
+

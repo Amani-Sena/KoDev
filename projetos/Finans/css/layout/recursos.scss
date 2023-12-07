@@ -1,0 +1,138 @@
+.section-recursos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.section-recursos-title h2 {
+    text-align: center;
+}
+
+.section-recursos-title p {
+    text-align: center;
+    margin-top: 0.6rem;
+}
+
+.con-recursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.recursos-left {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recursos-info {
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.recursos-info h2 {
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.recursos-info p {
+    font-size: 1rem;
+}
+
+.recursos-info i {
+    color: var(--yellow);
+    font-size: 26px;
+    margin-left: 0.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.recursos-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+
+.recursos-middle img {
+    width: 100%;
+}
+
+.recursos-right {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:925px) {
+    .con-recursos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .recursos-middle {
+        display: none;
+    }
+
+    .recursos-left {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recursos-right {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recursos-info {
+        margin-top: 3rem;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recursos-info h2 {
+        margin-top: 0.4rem;
+        margin-bottom: 0.6rem;
+        text-align: center;
+    }
+    
+    .recursos-info p {
+        text-align: center;
+    }
+    
+    .recursos-info i {
+        color: var(--yellow);
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .section-recursos-title {
+        width: 90%;
+    }
+
+    .section-recursos-title h1 {
+        text-align: center;
+    }
+    
+    .section-recursos-title p {
+        text-align: center;
+        margin-top: 0.6rem;
+    }
+}

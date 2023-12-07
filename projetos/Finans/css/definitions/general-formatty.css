@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "mont";
+  background-color: #f4f1ed;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=general-formatty.css.map */

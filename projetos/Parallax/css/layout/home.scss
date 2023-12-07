@@ -1,0 +1,87 @@
+.content {
+    background-color: var(--brown);
+    color: var(--whiteF);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-content-info {
+    width: 80%;
+}
+
+.con-content-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6 {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+}
+
+.caixa1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.con-home {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+	left: 0;
+	top: 45%;
+}
+
+.con-home h1 {
+    color: var(--whiteF);
+    font-size: 7rem;
+    text-align: center;
+}
+
+.caixa2 {
+    background-image: url(../img/img2.jpg);
+}
+
+.caixa3 {
+    background-image: url(../img/img3.jpg);
+}
+
+.caixa4 {
+    background-image: url(../img/img5.jpg);
+}
+
+.caixa5 {
+    background-image: url(../img/img6.jpg);
+}
+
+.caixa6 {
+    background-image: linear-gradient(to right, var(--pink) , var(--yellowL));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer {
+    width: 22rem;
+    height: 22rem;
+}
+
+@media (max-width:980px) {
+    .con-home h1 {
+        color: var(--whiteF);
+        font-size: 4rem;
+        text-align: center;
+    }
+}

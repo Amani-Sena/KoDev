@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-family: "Kame";
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "mont";
+}/*# sourceMappingURL=general-formatty.css.map */

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Kame";
+  src: url("../fonts/KameFree.woff");
+}
+@font-face {
+  font-family: "KameOut";
+  src: url("../fonts/KameFree-Outline.woff");
+}
+@font-face {
+  font-family: "mont";
+  src: url("../fonts/Montserrat-Light.woff");
+}
+@font-face {
+  font-family: "montR";
+  src: url("../fonts/Montserrat-Regular.woff");
+}/*# sourceMappingURL=fonts.css.map */

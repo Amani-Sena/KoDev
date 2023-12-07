@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>KoDev - Portfólio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <header>
+        
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#Inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quem-sou">Quem sou</a></li>
+                <a href="index.html"><img class="logo" src="img/KoDev.png" alt="Logo KoDev"></a>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <a class="btn-mobile-menu" onclick="abrirModal('mobile-menu')"><i class="fa-solid fa-bars"></i></a>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="nav-list-mobile">
+            <li class="nav-item-mobile"><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item-mobile"><a href="#quem-sou" class="nav-link">Quem sou</a></li>
+            <li class="nav-item-mobile"><a href="#portfolio" class="nav-link">Portfólio</a></li>
+            <li class="nav-item-mobile"><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+    </div>
+    
+    <section class="banner-index" id="Inicio">
+        <img class="img-banner" src="img/Cat.webp">
+        <div class="info-banner">
+            <h1>Café___<br>programação<br> e <em>gatos!</em>☕😻</em></h1>
+            <h2>Fazendo seus problemas<br>darem <em>miauw.</em></h2>
+        </div>
+    </section>
+
+    <div class="banner-bottom"></div>
+
+    <section class="con-quem-sou" id="quem-sou">
+        <div class="left-quem-sou">
+            <img src="img/file.jpg" alt="">
+        </div>
+        <div class="right-quem-sou">
+            <h1>Olá,</h1>
+            <p>me chamo Amani, Desenvolvedora Web FullStack e entusiasta de tecnologia, além de uma orgulhosa amante de gatos! 😸 
+                <br><br>Sou formada em Desenvolvimento Web e possuo 2 anos de experiência no campo, estou sempre me dedicando a aprimorar minhas habilidades para oferecer soluções digitais de alta qualidade.
+                <br><br>Acredito que cada projeto é uma oportunidade única para aprender, minha abordagem é centrada na entrega de soluções personalizadas às necessidades dos meus clientes.
+                <br><br>Se você procura uma desenvolvedora comprometida, criativa e apaixonada pelo que faz, estou pronta para transformar suas ideias em realidade. Sei que vamos criar algo purrfeito juntos!
+            </p>
+        </div>   
+    </section>
+
+    <section class="con-skills" id="portfolio">
+        <h5>Minhas Skills e Power Up's. 🐈</h5>
+        <br><br>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/html.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/css-3.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/js.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/php.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/mysql.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/wordpress.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/github.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/bootstrap.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/sass.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/node.webp" alt=""></div>
+                <div class="swiper-slide"><img src="img/ecma.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/jquery.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/typescript.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <div class="line"></div>
+    
+    <section class="con-portfolio">
+        <h5>Feitos, acabados e contando!</h5>
+        <p>Clique e veja.</p><br><br>
+
+        <div class="row-projetos">
+            <a href="https://amani-sena.github.io/Finans/" target="_blank"><img src="img/logofinans.png" alt=""></a>
+            <a href="https://amani-sena.github.io/Spotify/" target="_blank"><img src="img/Spotifylogo.png" alt=""></a>
+            <a href="https://amani-sena.github.io/Parallax2/" target="_blank"><img src="img/logo parallax.png" alt=""></a>
+            <a href="https://amani-sena.github.io/TecBlog/" target="_blank"><img src="img/TecBlog.png" alt=""></a>
+        </div> 
+    </section>
+
+    <section class="section-portfolio-cont">
+        <div class="con-portfolio-info">
+            <h3>Portfólio</h3> 
+            <p>Dê uma olhada mais de perto nos projetos finalizados!</p>
+        </div>
+        <div class="con-portfolio-img">
+            <div class="portfolio-img">
+                <a href="https://amani-sena.github.io/Finans/" target="_blank"><img src="img/Finans-display.png" alt=""></a>
+            </div>
+            <div class="portfolio-img">
+                <a href="https://amani-sena.github.io/Parallax2/" target="_blank"><img src="img/Parallax-display.png" alt=""></a>  
+            </div>
+            <div class="portfolio-img">
+                <a href="https://amani-sena.github.io/Spotify/" target="_blank"><img src="img/Spotify-display.png" alt=""></a>
+            </div>
+            <div class="portfolio-img">
+                <a href="https://amani-sena.github.io/TecBlog/" target="_blank"><img src="img/Tecblog-display.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        
+        <div class="line2"></div>
+        <div class="footer-content">
+            <div class="con-footer-logo">
+                <img class="logo-footer" src="img/KoDev.png" alt="Logo KoDev">
+                <hr>
+            </div>  
+            <div class="con-footer-info" id="contato">
+                <a href="mailto:amani.sena955@gmail.com?subject=Orçamento de projeto"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5521970600875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/+5521970600875" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.instagram.com/amani.sena/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div> 
+        </div>
+        
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous"></script>
+    <script src="js/swiper.js"></script>
+
+</body>
+</html>

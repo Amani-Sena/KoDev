@@ -1,0 +1,69 @@
+h1 {
+    font-size: 3.7rem; //60px
+    font-family: "montR";
+    margin-bottom: 0.8rem;
+}
+
+h2 {
+    font-size: 2.5rem; //40px
+    font-family: "montR";
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    font-size: 1.8rem; //30px
+    font-family: "montR" !important;
+    margin-bottom: 0.8rem;
+}
+
+h4 {
+    font-size: 1.4; //24px
+    font-family: "montR";
+    margin-bottom: 0.8rem;
+}
+
+h5 {
+    font-size: 1rem; //16px
+    font-family: "montR";
+}
+
+p {
+    font-size: 1rem;
+    font-family: "mont";
+}
+
+@media (max-width:980px) {
+    h1 {
+        font-size: 3.1rem; //50px
+        font-family: "montR";
+        margin-bottom: 0.8rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem; //36px
+        font-family: "montR";
+        margin-bottom: 0.8rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem; //30px
+        font-family: "montR" !important;
+        margin-bottom: 0.8rem;
+    }
+    
+    h4 {
+        font-size: 1.4; //24px
+        font-family: "montR";
+        margin-bottom: 0.8rem;
+    }
+    
+    h5 {
+        font-size: 1rem; //16px
+        font-family: "montR";
+    }
+    
+    p {
+        font-size: 1rem;
+        font-family: "mont";
+    }
+}

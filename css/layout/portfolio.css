@@ -1,0 +1,150 @@
+.con-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.con-portfolio h5 {
+  color: var(--blackF);
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.row-projetos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.row-projetos img {
+  border-radius: 50%;
+  width: 5.4rem;
+  height: 5.4rem;
+  margin-bottom: 1rem;
+}
+
+.section-portfolio-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4rem;
+  height: 24rem;
+}
+
+.con-portfolio-info {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: var(--purple);
+  padding: 3rem;
+}
+
+.con-portfolio-info h3 {
+  text-align: left;
+  margin-bottom: 0.6rem;
+  color: var(--whiteF);
+}
+
+.con-portfolio-info p {
+  color: var(--whiteF);
+}
+
+.con-portfolio-img {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.portfolio-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+  z-index: 3;
+}
+
+.portfolio-img:hover {
+  z-index: 4;
+}
+
+.portfolio-img a {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+}
+
+.portfolio-img img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .row-projetos {
+    width: 96%;
+    justify-content: center;
+  }
+  .row-projetos img {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .section-portfolio-cont {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .con-portfolio-info {
+    width: 100%;
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .con-portfolio-info h3 {
+    text-align: center;
+  }
+  .con-portfolio-info p {
+    color: var(--whiteF);
+    text-align: center;
+  }
+  .con-portfolio-img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .portfolio-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    z-index: 3;
+  }
+}/*# sourceMappingURL=portfolio.css.map */

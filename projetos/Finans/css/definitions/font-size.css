@@ -1,0 +1,64 @@
+h1 {
+  font-size: 3.7rem;
+  font-family: "montR";
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-family: "montR";
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: "montR" !important;
+  margin-bottom: 0.8rem;
+}
+
+h4 {
+  font-size: 1.4;
+  font-family: "montR";
+  margin-bottom: 0.8rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: "montR";
+}
+
+p {
+  font-size: 1rem;
+  font-family: "mont";
+}
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 2.6rem;
+    font-family: "montR";
+    margin-bottom: 0.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+    font-family: "montR";
+    margin-bottom: 0.8rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-family: "montR" !important;
+    margin-bottom: 0.8rem;
+  }
+  h4 {
+    font-size: 1.4;
+    font-family: "montR";
+    margin-bottom: 0.8rem;
+  }
+  h5 {
+    font-size: 1rem;
+    font-family: "montR";
+  }
+  p {
+    font-size: 1rem;
+    font-family: "mont";
+  }
+}/*# sourceMappingURL=font-size.css.map */

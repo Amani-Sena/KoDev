@@ -1,0 +1,37 @@
+.con-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteF);
+    padding-top: 2rem;
+    background-image: linear-gradient(to bottom right, var(--blackF), var(--purple));
+    padding-bottom: 4rem;
+}
+
+    .swiper {
+        width: 78%;
+        height: 5rem;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    @media (max-width:750px) {
+        .swiper {
+            width: 60%;
+            height: 5rem;
+        }
+    }

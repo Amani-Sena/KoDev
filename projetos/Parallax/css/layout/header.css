@@ -1,0 +1,17 @@
+header {
+  width: 100%;
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-brand {
+  height: 100%;
+}
+
+.nav-brand img {
+  width: 4rem;
+  height: 4rem;
+}/*# sourceMappingURL=header.css.map */
