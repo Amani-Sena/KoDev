@@ -4,16 +4,33 @@ html {
 
 body {
   font-family: "coffee-light";
-  overflow-X: hidden;
-  overflow-y: scroll;
   position: relative;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: var(--black);
+  overflow-y: scroll;
+}
+
+button {
+  font-family: "coffe", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 0.3s;
-  background-color: var(--whiteF);
 }
 
 a {
-  color: var(--whiteF);
+  cursor: pointer;
   text-decoration: none;
 }/*# sourceMappingURL=general-formatty.css.map */

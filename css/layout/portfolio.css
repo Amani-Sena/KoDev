@@ -1,150 +1,126 @@
-.con-portfolio {
+.portfolio {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
   margin-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
-
-.con-portfolio h5 {
-  color: var(--blackF);
+.portfolio h5 {
+  color: var(--whiteF);
   text-align: center;
-  margin-bottom: 0.6rem;
+}
+.portfolio p {
+  color: var(--whiteF);
+  text-align: center;
 }
 
-.row-projetos {
+.portfolio-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 80%;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
-
-.row-projetos img {
+.portfolio-row img {
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
-  width: 5.4rem;
-  height: 5.4rem;
-  margin-bottom: 1rem;
 }
 
-.section-portfolio-cont {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 4rem;
-  height: 24rem;
-}
-
-.con-portfolio-info {
+.portfolio-cont {
   display: flex;
   flex-direction: column;
-  width: 20%;
-  background-color: var(--purple);
-  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
 }
-
-.con-portfolio-info h3 {
-  text-align: left;
-  margin-bottom: 0.6rem;
+.portfolio-cont h4 {
   color: var(--whiteF);
+  text-align: center;
 }
-
-.con-portfolio-info p {
+.portfolio-cont p {
   color: var(--whiteF);
+  text-align: center;
 }
 
-.con-portfolio-img {
-  width: 80%;
+.portfolio-cont-img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  height: 100%;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  height: 34rem;
+  margin-top: 1rem;
 }
 
-.portfolio-img {
+.con-img-cont {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 33%;
   height: 100%;
-  z-index: 3;
+  overflow: hidden;
 }
-
-.portfolio-img:hover {
+.con-img-cont .img-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  padding: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--black);
+  width: 100%;
   z-index: 4;
+  opacity: 0;
+  transition: 0.4s;
 }
-
-.portfolio-img a {
+.con-img-cont a {
   width: 100%;
   height: 100%;
 }
-
-.portfolio-img img {
-  width: 100%;
+.con-img-cont img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.con-img-cont h5 {
+  color: var(--pink);
+  text-align: left;
+  margin-left: 1rem;
+}
+.con-img-cont i {
+  color: var(--pink);
+  font-size: 1.7rem;
+  margin-left: 1rem;
   transition: 0.4s;
 }
-
-.portfolio-img img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+.con-img-cont i:hover {
+  transform: scale(1.08);
 }
 
-@media (max-width: 900px) {
-  .row-projetos {
-    width: 96%;
-    justify-content: center;
+.con-img-cont:hover .img-content {
+  opacity: 1;
+}
+.con-img-cont:hover img {
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio-row {
+    width: 90%;
   }
-  .row-projetos img {
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
-    margin-bottom: 1rem;
-  }
-  .section-portfolio-cont {
-    width: 100%;
+  .portfolio-cont-img {
+    gap: 1.4rem;
+    height: 50rem;
     flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .con-portfolio-info {
-    width: 100%;
-    padding: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .con-portfolio-info h3 {
-    text-align: center;
-  }
-  .con-portfolio-info p {
-    color: var(--whiteF);
-    text-align: center;
-  }
-  .con-portfolio-img {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  .portfolio-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 100%;
-    z-index: 3;
+  .con-img-cont {
+    width: 90%;
   }
 }/*# sourceMappingURL=portfolio.css.map */

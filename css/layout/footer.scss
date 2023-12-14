@@ -1,55 +1,104 @@
-footer {
-    width: 100%;
-    bottom: 0;
-    padding-bottom: 4rem;
-    margin-top: 6rem;
-    background-image: linear-gradient(to right, var(--blackF), var(--purple));
+.footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex: 1;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 6rem;
+        margin-top: 4rem;
+    }
+
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiteF);
+    }
+
+    
 }
 
-.logo-footer {
-    width: 8rem;
-    height: 8rem;
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
 }
 
-.footer-content {
-    width: 80%;
+.contact {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    align-items: left;
+    justify-content: flex-start;
+
+    img {
+        width: 8rem;
+    }
 }
 
-.con-footer-logo {
+.contact-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    max-height: 4rem;
+    margin-bottom: 1rem;
+
+    i {
+        font-size: 1.7rem;
+        color: var(--whiteF);
+    }
+
+    #discord-icon {
+        font-size: 1.5rem;
+    }
+
+    em {
+        font-size: 1.4rem;
+        color: var(--whiteF);
+        margin-left: 1rem;
+    }
+
 }
 
-.con-footer-logo hr {
-    color: var(--whiteF);
-    width: 100%;
-    size: 1px;
-    margin-left: 1rem;
-    border: 1px dashed;
-}
-
-.con-footer-info {
-    width: 100%;
+.footer-up {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    color: var(--whiteF);
+    justify-content: center;
+    padding: 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+
+    i {
+        animation: Up 1s infinite alternate;
+        color: var(--whiteF);
+        font-size: 1.8rem;
+    }
 }
 
-.con-footer-info i {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    font-size: 1.6rem;
-    color: var(--whiteF);
+@keyframes Up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(4px);
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .footer-row {
+        flex-direction: column;
+    }
 }

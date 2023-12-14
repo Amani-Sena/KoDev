@@ -1,0 +1,117 @@
+.header-nav {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  right: 2rem;
+  top: 2rem;
+  z-index: 4;
+}
+.header-nav i {
+  margin-right: 1rem;
+  font-size: 2.1rem;
+  color: var(--white);
+  transition: 0.4s;
+}
+.header-nav i:hover {
+  color: var(--whiteF);
+  transform: scale(1.08);
+}
+.header-nav img {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+.header-nav img:hover {
+  transform: scale(1.08);
+}
+
+.con-video-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: -4;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+#video-hero {
+  filter: blur(6px);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+}
+
+.bg-home {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 128, 255, 0.027), var(--black));
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.hero img {
+  width: 26rem;
+}
+.hero h5 {
+  color: var(--whiteF);
+  text-align: center;
+}
+.hero div {
+  margin-top: 2rem;
+  padding: 1.2rem 1.4rem;
+}
+.hero a {
+  padding: 1.2rem 1.4rem;
+  color: var(--whiteF);
+  border: 1px inset var(--pink);
+  background-color: var(--pink);
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  transition: 0.4s;
+}
+.hero a:hover {
+  color: var(--pink);
+  background-color: transparent;
+}
+.hero i {
+  color: var(--whiteF);
+  margin-top: 4rem;
+  font-size: 1.6rem;
+}
+
+.up-down {
+  animation: UpDown 1s infinite alternate;
+}
+
+@keyframes UpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-6px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero img {
+    width: 20rem;
+  }
+  .header-nav i {
+    font-size: 2rem;
+  }
+  .header-nav img {
+    width: 2.4rem;
+  }
+}/*# sourceMappingURL=header.css.map */
