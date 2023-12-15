@@ -1,3 +1,16 @@
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--black);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, var(--pink), var(--purple));    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+  }
+
 html {
     scroll-behavior: smooth;
 }
