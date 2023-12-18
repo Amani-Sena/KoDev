@@ -501,15 +501,34 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  overflow: hidden;
+  transition: 0.4s;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.4s;
+}
+
+.swiper-slide:hover .skill-name {
+  display: flex;
+  transition: 0.4s;
+}
+
+.skill-name {
+  position: absolute;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.2rem;
+  background-image: linear-gradient(to right, var(--purple), var(--pink));
+  padding: 0.4rem;
+  transition: 0.4s;
 }
 
 .line {
@@ -568,6 +587,9 @@ a {
   color: var(--whiteF);
   text-align: center;
 }
+.portfolio-cont .cont-icons {
+  margin-bottom: 1rem;
+}
 
 .portfolio-cont-img {
   display: flex;
@@ -623,7 +645,7 @@ a {
   margin-left: 1rem;
   transition: 0.4s;
 }
-.con-img-cont i:hover {
+.con-img-cont #links:hover {
   transform: scale(1.08);
 }
 

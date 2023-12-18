@@ -45,6 +45,9 @@
   color: var(--whiteF);
   text-align: center;
 }
+.portfolio-cont .cont-icons {
+  margin-bottom: 1rem;
+}
 
 .portfolio-cont-img {
   display: flex;
@@ -100,7 +103,7 @@
   margin-left: 1rem;
   transition: 0.4s;
 }
-.con-img-cont i:hover {
+.con-img-cont #links:hover {
   transform: scale(1.08);
 }
 
