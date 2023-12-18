@@ -37,11 +37,6 @@
   transition: 0.4s;
 }
 
-.swiper-slide:hover .skill-name {
-  display: flex;
-  transition: 0.4s;
-}
-
 .skill-name {
   position: absolute;
   display: none;
@@ -51,6 +46,11 @@
   margin-top: -0.2rem;
   background-image: linear-gradient(to right, var(--purple), var(--pink));
   padding: 0.4rem;
+  transition: 0.4s;
+}
+
+.swiper-slide:hover .skill-name {
+  display: flex;
   transition: 0.4s;
 }
 

@@ -36,13 +36,6 @@
     transition: 0.4s;
   }
 
-  .swiper-slide:hover {
-    .skill-name {
-      display: flex;
-      transition: 0.4s;
-    }
-  }
-
   .skill-name {
     position: absolute;
     display: none;
@@ -54,6 +47,13 @@
     //background-color: var(--blackOp);
     padding: 0.4rem;
     transition: 0.4s;
+  }
+
+  .swiper-slide:hover {
+    .skill-name {
+      display: flex;
+      transition: 0.4s;
+    }
   }
 
   .line {
