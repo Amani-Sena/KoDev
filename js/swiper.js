@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 7,
-    spaceBetween: 130,
+    //slidesPerView: 6,
+    //spaceBetween: 110,
     loop: true,
     autoplay: {
         delay: 3000,
@@ -26,14 +26,14 @@ var swiper = new Swiper(".mySwiper", {
         },
         1280: {
             slidesPerView: 7,
-            spaceBetween: 96,
+            spaceBetween: 100,
         },
         1600: {
-            slidesPerView: 7,
-            spaceBetween: 120,
+            slidesPerView: 8,
+            spaceBetween: 110,
         },
         1920: {
-            slidesPerView: 8,
+            slidesPerView: 9,
             spaceBetween: 120,
         },
       },

@@ -4,7 +4,6 @@ var aboutTitle = document.getElementById("hi");
 var aboutDesc1 = document.getElementById("aboutDesc1");
 var aboutDesc2 = document.getElementById("aboutDesc2");
 var aboutDesc3 = document.getElementById("aboutDesc3");
-var aboutDesc4 = document.getElementById("aboutDesc4");
 var skillsTitle = document.getElementById("skillsTitle");
 var portTitle1 = document.getElementById("portTitle1");
 var portDesc1 = document.getElementById("portDesc1");
@@ -18,9 +17,8 @@ var language = {
     hire: "Hire me!",
     aboutT:"Hi,",
     aboutD1: "my name is Amani, FullStack Web Developer and technology enthusiast, as well as a proud cat lover! 😸",
-    aboutD2: "I have a degree in Web Development and 2 years of experience in the field, I am always dedicating myself to improving my skills to offer high quality digital solutions.",
-    aboutD3: "I believe that every project is a unique opportunity to learn, my approach is centered on delivering customized solutions to my clients' needs.",
-    aboutD4: "If you're looking for a developer who is committed, creative and passionate about what she does, I'm ready to turn your ideas into reality. I know we'll create something perfect together!",
+    aboutD2: "I'm a student of Systems Analysis and Development and I'm always striving to improve my skills in order to offer high-quality digital solutions.",
+    aboutD3: "If you're looking for a developer who is committed, creative and passionate about what she does, I'm ready to turn your ideas into reality. I know we'll create something perfect together!",
     skillsTitle: "My skills and power ups. 🐈",
     portTitle1: "Done, finished and counting!",
     portDesc1: "Click to see.",
@@ -35,9 +33,8 @@ var language = {
     hire: "Contrate-me!",
     aboutT: "Olá,",
     aboutD1: "me chamo Amani, Desenvolvedora Web FullStack e entusiasta de tecnologia, além de uma orgulhosa amante de gatos! 😸",
-    aboutD2: "Sou formada em Desenvolvimento Web e possuo 2 anos de experiência no campo, estou sempre me dedicando a aprimorar minhas habilidades para oferecer soluções digitais de alta qualidade.",
-    aboutD3: "Acredito que cada projeto é uma oportunidade única para aprender, minha abordagem é centrada na entrega de soluções personalizadas às necessidades dos meus clientes.",
-    aboutD4: "Se você procura uma desenvolvedora comprometida, criativa e apaixonada pelo que faz, estou pronta para transformar suas ideias em realidade. Sei que vamos criar algo perfeito juntos!",
+    aboutD2: "Sou estudante de Análise e Desenvolvimento de Sistemas e estou sempre me dedicando a aprimorar minhas habilidades para oferecer soluções digitais de alta qualidade.",
+    aboutD3: "Se você procura uma desenvolvedora comprometida, criativa e apaixonada pelo que faz, estou pronta para transformar suas ideias em realidade. Sei que vamos criar algo perfeito juntos!",
     skillsTitle: "Minhas skills e power up's. 🐈",
     portTitle1: "Feitos, acabados e contando!",
     portDesc1: "Clique e veja.",
@@ -58,7 +55,6 @@ var setLanguage = () => {
     aboutDesc1.textContent = language.br.aboutD1;
     aboutDesc2.textContent = language.br.aboutD2;
     aboutDesc3.textContent = language.br.aboutD3;
-    aboutDesc4.textContent = language.br.aboutD4;
     skillsTitle.textContent = language.br.skillsTitle;
     portTitle1.textContent = language.br.portTitle1;
     portDesc1.textContent = language.br.portDesc1;
@@ -73,7 +69,6 @@ var setLanguage = () => {
     aboutDesc1.textContent = language.eng.aboutD1;
     aboutDesc2.textContent = language.eng.aboutD2;
     aboutDesc3.textContent = language.eng.aboutD3;
-    aboutDesc4.textContent = language.eng.aboutD4;
     skillsTitle.textContent = language.eng.skillsTitle;
     portTitle1.textContent = language.eng.portTitle1;
     portDesc1.textContent = language.eng.portDesc1;
