@@ -1,0 +1,238 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    padding-bottom: 10rem;
+
+    h4 {
+        color: var(--whiteF);
+        text-align: center;
+    }
+
+    p {
+        color: var(--whiteF);
+        text-align: center;
+    }
+}
+
+.work-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-right: 2.4rem;
+}
+
+.con-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.work-demo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: transform 0.6s;
+    padding: 1rem;
+    border-top: 1px inset var(--pink);
+    border-right: 1px inset var(--pink);
+    min-width: 44rem;
+}
+
+.work-demo:hover {
+    animation-name: work-border;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    transform: scale(1.02);
+}
+
+.work-img {
+    max-width: 20rem;
+    max-height: 34rem;
+    width: 20rem;
+    height: 34rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease-in-out;
+    margin-right: auto;
+}
+
+#anyplo {
+    background-image: url('../../img/anyplo-bg-2.webp');
+}
+
+#anyplo:hover {
+    background-image: url('../../img/anyplo-bg.webp');
+}
+
+#eris {
+    background-image: url('../../img/eris-bg.webp');
+}
+
+#eris:hover {
+    background-image: url('../../img/eris-bg-2.webp');
+}
+
+#simple-cat {
+    background-image: url('../../img/simple-cat-bg.webp');
+}
+
+#simple-cat:hover {
+    background-image: url('../../img/simple-cat-bg-2.webp');
+}
+
+#amanidev {
+    background-image: url('../../img/amanidev-bg-2.webp');
+}
+
+.progress {
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px inset var(--pink);
+    border-left: 1px inset var(--pink);
+    margin-top: 0.4rem;
+}
+
+.work-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    min-width: 24rem;
+    padding-right: 0.6rem;
+
+    p {
+        margin-bottom: 1rem;
+        max-width: 20rem;
+        text-align: left;
+        line-height: 1.6rem;
+    }
+
+    a:hover {
+        em {
+            transition: 0.4s;
+            margin-left: 0.1rem;
+        }
+    }
+
+    h1 {
+        transition: 0.6s;
+        margin-bottom: 4rem;
+        color: var(--white);
+        max-width: 25rem;
+    }
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    transition: 0.6s;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: var(--pink);
+    height: 1px;
+    width: 50%;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+}
+
+.nav-link:hover::after {
+    width: 90%;
+}
+
+@keyframes work-border{
+    from {
+        border-top: 1px inset var(--pink);
+        border-right: 1px inset var(--pink);
+        border-left: 0px;
+        border-bottom: 0px;
+    }
+    to {
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 1px inset var(--pink);
+        border-bottom: 1px inset var(--pink);
+    }
+}
+
+@keyframes work-progress{
+    from {
+        border-top: 0px inset var(--pink);
+        border-right: 0px inset var(--pink);
+        border-left: 1px inset var(--pink);
+        border-bottom: 1px inset var(--pink);
+    }
+    to {
+        border-top: 1px inset var(--pink);
+        border-right: 1px inset var(--pink);
+        border-left: 0px inset var(--pink);
+        border-bottom: 0px inset var(--pink);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .work-title {
+        width: 86%;
+        margin-right: 0;
+    }
+
+    .work-demo {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+        min-width: 20rem;
+        width: 80%;
+    }
+
+    .work-img {
+        width: 20rem;
+        height: 22rem;
+    }
+
+    .work-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        min-width: 0rem;
+        padding-right: 0rem;
+    
+        h1 {
+            transition: 0.6s;
+            margin-bottom: 4rem;
+            max-width: 20rem;
+            color: var(--white);
+        }
+    
+        a {
+            color: var(--white);
+            font-size: 1.4rem;
+            margin-bottom: 4rem;
+            transition: 0.6s;
+            border-bottom: 1px inset var(--pink);
+        }
+    }
+}

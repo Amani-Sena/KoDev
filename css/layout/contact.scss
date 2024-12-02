@@ -1,0 +1,152 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--black);
+    
+    p {
+        max-width: 30rem;
+        text-align: center;
+        color: var(--white);
+        margin-top: 0.6rem;
+        line-height: 2rem;
+    }
+
+    h5 {
+        color: var(--white);
+        margin-top: 4rem;
+        border-bottom: 1px inset var(--pink);
+        padding-bottom: 0.6rem;
+    }
+}
+
+.con-form {
+    width: 46rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 3rem; 
+}
+
+.con-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-input {
+    width: 100%;
+    max-width: 20rem;
+    margin: 1.2rem 0;
+    position: relative;
+}
+
+.single-input label {
+    position: absolute;
+    left: 0;
+    margin-left: 0.3rem;
+    bottom: 0.4rem;
+    cursor: text;
+    transition: 0.3s ease-in-out;
+    color: var(--whiteF);
+    font-size: 1.3rem;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.single-input input {
+    border: 0;
+    padding: 0.6rem;
+    width: 100%;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid var(--white);
+    color: var(--whiteF);
+    transition: 0.6s;
+    z-index: 10;
+}
+
+
+div.single-input input:focus,
+div.single-input input:valid {
+    border-bottom: 2px inset var(--pink);
+}
+
+div.single-input input:focus ~ label,
+div.single-input input:valid ~ label {
+    transform: translateY(-1.6rem);
+    font-size: 1rem;
+    color: var(--pink);
+}
+
+
+
+
+.con-form textarea {
+    width: 100%;
+    margin: 1.2rem 0;
+    position: relative;
+    border: 0;
+    outline: 0;
+    padding: 0.6rem;
+    background: transparent;
+    border-bottom: 1px solid var(--white);
+    transition: 0.6s;
+    color: var(--white);
+    font-size: 1.2rem;
+    height: 2rem;
+}
+
+.con-form textarea::placeholder {
+    color: var(--white);
+}
+
+div textarea:focus {
+    border-bottom: 2px inset var(--pink);
+    height: 8rem;
+}
+
+//---------------------------------------------------------------------------
+
+@media screen and (max-width: 900px) {
+
+    .contact {
+        p {
+            max-width: 22rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+
+    .form-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .con-form {
+        width: 84%;
+    }
+
+    .single-input {
+        width: 100%;
+        max-width: none;
+        margin: 1.2rem 0;
+        position: relative;
+    }
+}

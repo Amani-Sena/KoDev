@@ -1,104 +1,40 @@
-.footer {
+.footer-foot {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex: 1;
-    gap: 2rem;
-    margin-top: 4rem;
-    padding-bottom: 4rem;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px inset var(--pink);
+    padding: 0.6rem 0 0.6rem 0;
+    background-color: var(--black);
+}
+
+.img-foot {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
 
     img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 6rem;
-        margin-top: 4rem;
-    }
-
-    p {
-        margin-left: auto;
-        margin-right: auto;
-        color: var(--whiteF);
-    }
-
+        width: 6.4rem;
+    } 
     
 }
 
-.footer-row {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: flex-start;
-
-    img {
-        width: 8rem;
-    }
-}
-
-.contact-info {
+.icons-foot {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 1rem;
-
-    i {
-        font-size: 1.7rem;
-        color: var(--whiteF);
-    }
-
-    #discord-icon {
-        font-size: 1.5rem;
-    }
-
-    em {
-        font-size: 1.4rem;
-        color: var(--whiteF);
-        margin-left: 1rem;
-    }
-
-}
-
-.footer-up {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 0.7rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    margin-top: 1rem;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    gap: 0.8rem;
+    margin-right: 2rem;
 
     i {
-        animation: Up 1s infinite alternate;
-        color: var(--whiteF);
         font-size: 1.8rem;
+        color: var(--pink);
+        transition: 0.6s;
     }
-}
 
-@keyframes Up {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(4px);
-    }
-  }
-
-@media screen and (max-width: 700px) {
-    .footer-row {
-        flex-direction: column;
+    i:hover {
+        transform: scale(1.08);
     }
 }

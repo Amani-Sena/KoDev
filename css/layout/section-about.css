@@ -1,0 +1,116 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 22rem;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+}
+
+.about-languages-desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+  background-color: var(--pink);
+  padding: 1rem 0;
+  width: 100%;
+}
+.about-languages-desktop span {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.about-languages-mobile {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  gap: 1.4rem;
+  background-color: var(--pink);
+  padding: 1rem 0;
+  width: 100%;
+}
+.about-languages-mobile span {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.about-languages-mobile::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem */
+}
+
+.about-languages-mobile span:nth-child(1) {
+  margin-left: 0.6rem;
+}
+
+.about-languages-mobile span:nth-child(16) {
+  margin-right: 0.6rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.about-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+}
+.about-info p {
+  color: var(--whiteF);
+  max-width: 36rem;
+  line-height: 150%;
+  text-align: left;
+}
+
+.about-citation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+}
+.about-citation p {
+  color: var(--white);
+  line-height: 42px;
+  font-size: 2rem;
+}
+.about-citation h3 {
+  font-family: "coffee";
+}
+.about-citation em {
+  color: var(--whiteF);
+  font-size: 2rem !important;
+}
+
+@media screen and (max-width: 970px) {
+  .about {
+    gap: 10rem;
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .about-info {
+    width: 88%;
+  }
+  .about-citation {
+    width: 88%;
+  }
+  .about-languages-mobile {
+    display: flex;
+  }
+  .about-languages-desktop {
+    display: none;
+  }
+}/*# sourceMappingURL=section-about.css.map */

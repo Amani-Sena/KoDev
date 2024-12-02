@@ -1,275 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Desenvolvimento Web e Design: dando vida à sua imaginação com precisão e paixão. Vamos construir juntos!">
+    <meta name="author" content="Amani, amaniDev">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="amaniDev">
+    <meta property="og:description" content="Dando vida à sua imaginação com precisão e paixão.">
+    <meta property="og:image" content="https://amanidev.com/img/amanidev-og.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon" />
-    <title>amaniDev - Portfólio</title>
-
+    <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon" />
+    <title id="title_index">amaniDev - Fullstack Web Developer</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous" defer></script>
+    <script src="js/form-submit.js" defer></script>
 </head>
+
 <body>
 
     <div id="preloader">
-        <div class="load-9">
-            <div class="spinner">
-              <div class="bubble-1"></div>
-              <div class="bubble-2"></div>
-              <div class="bubble-3"></div>
-            </div>
-          </div>
-        <h4 class="title gradient" id="loading">Loading...</h4>
+        <h1 class="title pink" id="loading">Home</h1>
     </div>
 
-        <!--Header-->
-        <header id="hero">
-            <nav class="header-nav" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
-                <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=5521970600875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#eng" data-reload><img src="img/eng.png" alt="Bandeira dos Estados Unidos"></a>
-                <a href="#br" data-reload><img src="img/br.png" alt="Bandeira do Brazil"></a>
-            </nav>
-        </header>
-        <div class="bg-home">
+    <!--Header-->
+    <header id="hero">
+        <nav>
+            <div class="btn-menu" id="btn-menu" onclick="openMenu('con-side-menu-op')" data-aos="fade-down"
+                data-aos-delay="1400" data-aos-duration="1400">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </div>
+        </nav>
+        <div class="con-side-menu-op close-side-menu" id="con-side-menu-op">
+            <div class="side-menu">
+                <div class="con-side-menu">
+                    <div class="menu-header">
+                        <h5>Menu</h5>
+                        <div class="menu-line"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <h1 id="home-menu"><a href="" id="home_menu">Home</a></h1>
+                        </li>
+                        <li>
+                            <a href="#section-about"><h1 id="about-menu">About me</h1></a>
+                        </li>
+                        <li>
+                            <h1><a href="https://amanidev.com/blog/" target="_blank" id="blog_menu">My blog</a></h1>
+                        </li>
+                    </ul>
+                    <div class="menu-contact">
+                        <h5 id="hello_menu">Say hello</h5>
+                        <div class="menu-contact-icons">
+                            <a href="https://wa.me/+5521995753657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+
+                        <h5 id="language_menu">Change language</h5>
+                        <div class="menu-contact-icons">
+                            <a href="#eng" data-reload><img src="img/eng.webp" alt="United States Flag" id="english"></a>
+                            <a href="#br" data-reload><img src="img/br.webp" alt="Brazilian Frag" id="portuguese"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" data-scroll-container>
+        <section class="bg-hero">
             <div class="con-video-hero">
-                <video autoplay muted loop id="video-hero">
-                    <source src="img/hero5.mp4" type="video/mp4">
+                <video autoplay muted loop id="video-hero" data-aos="zoom-out" data-aos-delay="1400"
+                    data-aos-duration="1400" preload="auto" poster="img/poster_hero.webp">
+                    <source src="img/bg_hero.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="hero">
-                <img src="img/logo2.png" alt="Logo amaniDev" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1100">
-                <h5><span class="animated"></span></h5>
-                <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><a href="#footer" id="hire">Contrate-me!</a></div>
-                
+                <img src="img/logo2.webp" alt="Logo amaniDev" data-aos="zoom-in" data-aos-delay="1400"
+                    data-aos-duration="1400">
+
+                <div data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1400">
+                    <div class="center">
+                        <a class="btn" href="#contact">
+                            <svg width="11.4rem" height="3.8rem" viewBox="0 0 182 61" class="border">
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                            </svg>
+                            <span id="hire">Get in touch!</span>
+                        </a>
+                    </div>
+                </div>
                 <i class="fa-solid fa-chevron-down up-down"></i>
             </div>
-        </div>
+        </section>
 
-        <section class="about">
-            <div class="about-img" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
-                <img src="img/file.jpg" alt="Foto de Amani">
+        <section class="about" id="section-about" data-scroll-section>
+            <div class="about-languages-desktop">
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="8">HTML</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="7">Scss</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">Javascript</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">Vue.js</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">PHP</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">Laravel</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">MySQL</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">Wordpress</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">Elementor</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">Github</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">Git</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-4">Bootstrap</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5">Node.js</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-6">ECMAScript</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-7">jQuery</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8">TypeScript</span>
             </div>
-            <div class="about-info" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <h1 id="hi" class="gradient">Olá,</h1>
-                <p><em id="aboutDesc1">me chamo Amani, Desenvolvedora Web FullStack e entusiasta de tecnologia, além de uma orgulhosa amante de gatos! 😸</em>
-                    <br><br>
-                    <em id="aboutDesc2">Sou estudante de Análise e Desenvolvimento de Sistemas e estou sempre me dedicando a aprimorar minhas habilidades para oferecer soluções digitais de alta qualidade.</em>
-                    <br><br>
-                    <em id="aboutDesc3">Se você procura uma desenvolvedora comprometida, criativa e apaixonada pelo que faz, estou pronta para transformar suas ideias em realidade. Sei que vamos criar algo perfeito juntos!</em></p>
+
+            <div class="about-languages-mobile">
+                <span>HTML</span>
+                <span >Scss</span>
+                <span>Javascript</span>
+                <span>Vue.js</span>
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Wordpress</span>
+                <span>Elementor</span>
+                <span>Github</span>
+                <span>Git</span>
+                <span>Bootstrap</span>
+                <span>Node.js</span>
+                <span>ECMAScript</span>
+                <span>jQuery</span>
+                <span>TypeScript</span>
+            </div>
+            <div class="about-container">
+                <div class="about-info">
+                    <h1 id="hi" class="pink">Hi,</h1>
+                    <p><em id="aboutText">My name is Amani, FullStack Web Developer and Designer with a passion for
+                            creating elegant and simple websites. I bring this philosophy to every project, aiming to
+                            inspire through my work!</em></p>
+                    
+                </div>
+
+                <div class="about-citation">
+                    <h2 id="about_write" class="pink">I also write,</h2>
+                    <h2 class="pink" id="about_sometimes">sometimes</h2>
+                    <div class="buttons-about">
+                        <div class="group-btn">
+                            <a class="btn" target="_blank" href="https://amanidev.com/blog/">
+                                <svg width="11.2rem" height="3.8rem" viewBox="0 0 186 61" class="border">
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span id="blog_btn">My blog</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="skills" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-            <h5 id="skillsTitle">Minhas skills e power up's. 🐈</h5>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><div class="skill-name">HTML5</div><img src="img/html.jpg" alt="logo HTML"></div>
-                  <div class="swiper-slide"><div class="skill-name">CSS3</div><img src="img/css-3.png" alt="logo CSS"></div>
-                  <div class="swiper-slide"><div class="skill-name">JavaScript</div><img src="img/js.png" alt="logo JavaScript"></div>
-                  <div class="swiper-slide"><div class="skill-name">PHP</div><img src="img/php.png" alt="logo PHP"></div>
-                  <div class="swiper-slide"><div class="skill-name">MySQL</div><img src="img/mysql.png" alt="logo MySQL"></div>
-                  <div class="swiper-slide"><div class="skill-name">React</div><img src="img/react.png" alt="logo React"></div>
-                  <div class="swiper-slide"><div class="skill-name">Wordpress</div><img src="img/wordpress.png" alt="logo WordPress"></div>
-                  <div class="swiper-slide"><div class="skill-name">Github</div><img src="img/github.png" alt="logo WordPress"></div>
-                  <div class="swiper-slide"><div class="skill-name">Git</div><img src="img/git-logo.jpg" alt="logo WordPress"></div>
-                  <div class="swiper-slide"><div class="skill-name">Bootstrap</div><img src="img/bootstrap.jpg" alt="logo BootStrap"></div>
-                  <div class="swiper-slide"><div class="skill-name">Sass</div><img src="img/sass.jpg" alt="logo Sass"></div>
-                  <div class="swiper-slide"><div class="skill-name">NodeJS</div><img src="img/node.webp" alt="logo NodeJS"></div>
-                  <div class="swiper-slide"><div class="skill-name">ECMAScript</div><img src="img/ecma.png" alt="logo ECMAScript"></div>
-                  <div class="swiper-slide"><div class="skill-name">JQuery</div><img src="img/jquery.png" alt="logo JQuery"></div>
-                  <div class="swiper-slide"><div class="skill-name">TypeScript</div><img src="img/typescript.png" alt="logo TypeScript"></div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-              <div class="line"></div>
-        </section>
-        
-
-        <section class="portfolio">
-            <h5 id="portTitle1" class="gradient" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Feitos, acabados e contando!</h5>
-            <p id="portDesc1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Clique e veja.</p>
-            <div class="portfolio-row">
-                <a href="https://gerichtamanidev.vercel.app" target="_blank" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><img src="img/Gericht.png" alt="Logo Cantinho do Café"></a>
-                <a href="https://amani-sena.github.io/Corte-Nobre/" target="_blank" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"><img src="img/CorteNobre-logo.png" alt="Logo Corte Nobre"></a>
-                <a href="https://amani-sena.github.io/Finans/" target="_blank" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000"><img src="img/logofinans.png" alt="Logo Finans"></a>
-                <a href="https://amani-sena.github.io/QuickFit/" target="_blank" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000"><img src="img/QuickFit-logo.jpg" alt="Logo QuickFit"></a>
-                <!--<a href="https://amani-sena.github.io/TecBlog/" target="_blank" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"><img src="img/TecBlog.png" alt="Logo TecBlog"></a>-->
-                <a href="https://amani-sena.github.io/Parallax2/" target="_blank" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000"><img src="img/logo parallax.png" alt="Logo Parallax"></a>
-                <a href="https://amani-sena.github.io/Cantinho-do-cafe/" target="_blank" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1000"><img src="img/cantinho-do-cafe-logo.jpg" alt="Logo Cantinho do Café"></a>
-            </div>
-        </section>
-
-        <section class="portfolio-cont">
-            <h2 id="portTitle2" class="gradient" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Portfólio</h2>
-            <p id="portDesc2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Dê uma olhada mais de perto nos projetos finalizados!</p>
-            <div class="portfolio-cont-img">
-
-                <div class="con-img-cont" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <a href="https://gerichtamanidev.vercel.app" target="_blank"><img src="img/Gericht-display.jpg" alt=""></a>
-                    <div class="img-content">
-                        <h5 class="gradient">Gericht</h5>
-                        <div class="cont-icons">
-                            <a href="https://github.com/Amani-Sena/Gericht" target="_blank"><i class="fa-brands fa-github gradient links"></i></a>
-                            <a href="https://gericht-sooty-kappa.vercel.app" target="_blank"><i class="fa-solid fa-link gradient links"></i></a>
-                        </div>
-                        <div class="cont-icons">
-                            <i class="fa-brands fa-html5 gradient"></i>
-                            <i class="fa-brands fa-sass gradient"></i>
-                            <i class="fa-brands fa-react"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="con-img-cont" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <a href="https://amani-sena.github.io/Finans/" target="_blank"><img src="img/finans-display.jpg" alt=""></a>
-                    <div class="img-content">
-                        <h5 class="gradient">Finans</h5>
-                        <div class="cont-icons">
-                            <a href="https://github.com/Amani-Sena/Finans" target="_blank"><i class="fa-brands fa-github gradient links"></i></a>
-                            <a href="https://amani-sena.github.io/Finans/" target="_blank"><i class="fa-solid fa-link gradient links"></i></a>
-                        </div>
-                        <div class="cont-icons">
-                            <i class="fa-brands fa-html5 gradient"></i>
-                            <i class="fa-brands fa-sass gradient"></i>
-                            <i class="fa-brands fa-js gradient"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="con-img-cont" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <a href="https://amani-sena.github.io/QuickFit/" target="_blank"><img src="img/quickfit-display.jpg" alt=""></a>
-                    <div class="img-content">
-                        <h5 class="gradient">QuickFit</h5>
-                        <div class="cont-icons">
-                            <a href="https://github.com/Amani-Sena/QuickFit" target="_blank"><i class="fa-brands fa-github gradient links"></i></a>
-                            <a href="https://amani-sena.github.io/QuickFit/" target="_blank"><i class="fa-solid fa-link gradient links"></i></a>
-                        </div>
-                        <div class="cont-icons">
-                            <i class="fa-brands fa-html5 gradient"></i>
-                            <i class="fa-brands fa-sass gradient"></i>
-                            <i class="fa-brands fa-js gradient"></i>
-                        </div>
-                    </div>
-                </div>
+        <section class="work" data-scroll-section>
+            <div class="work-title">
+                <h2 id="work_title" class="pink">Recent work</h2>
             </div>
 
-
-            <div class="portfolio-cont-img" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-
-                <div class="con-img-cont" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <a href="https://amani-sena.github.io/Corte-Nobre/" target="_blank"><img src="img/corte-nobre-display.jpg" alt=""></a>
-                    <div class="img-content">
-                        <h5 class="gradient">Corte Nobre</h5>
-                        <div class="cont-icons">
-                            <a href="https://github.com/Amani-Sena/Corte-Nobre" target="_blank"><i class="fa-brands fa-github gradient links"></i></a>
-                            <a href="https://amani-sena.github.io/Corte-Nobre/" target="_blank"><i class="fa-solid fa-link gradient links"></i></a>
-                        </div>
-                        <div class="cont-icons">
-                            <i class="fa-brands fa-html5 gradient"></i>
-                            <i class="fa-brands fa-sass gradient"></i>
-                            <i class="fa-brands fa-js gradient"></i>
-                        </div>
+            <div class="con-work">
+                
+                <div class="work-demo">
+                    <div class="work-img" id="anyplo"></div>
+                    <div class="work-info">
+                        <h1>Anyplo</h1>
+                        <a href="https://anyplo.amanidev.com/" target="_blank" class="nav-link">Visit the website ></a>
+                        <p>Scss, Javascript, PHP, MySQL</p>
+                        <p class="progress progress-f">Finished...</p>
                     </div>
                 </div>
 
-                <div class="con-img-cont" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <a href="https://amani-sena.github.io/Parallax2/" target="_blank"><img src="img/parallax-display.jpg" alt=""></a>
-                    <div class="img-content">
-                        <h5 class="gradient">Parallax</h5>
-                        <div class="cont-icons">
-                            <a href="https://github.com/Amani-Sena/Parallax2" target="_blank"><i class="fa-brands fa-github gradient links"></i></a>
-                            <a href="https://amani-sena.github.io/Parallax2/" target="_blank"><i class="fa-solid fa-link gradient links"></i></a>
-                        </div>
-                        <div class="cont-icons">
-                            <i class="fa-brands fa-html5 gradient"></i>
-                            <i class="fa-brands fa-sass gradient"></i>
-                            <i class="fa-brands fa-js gradient"></i>
-                        </div>
+                <div class="work-demo">
+                    <div class="work-img" id="eris"></div>
+                    <div class="work-info">
+                        <h1>Eris</h1>
+                        <a href="https://eris.amanidev.com/" target="_blank" class="nav-link">Visit the website ></a>
+                        <p>Scss, Vue.js, Laravel, MySQL</p>
+                        <p class="progress progress-f">Finished...</p>
                     </div>
                 </div>
 
-                <div class="con-img-cont" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <a href="https://amani-sena.github.io/Cantinho-do-cafe/" target="_blank"><img src="img/cantinho-do-cafe-display.jpg" alt=""></a>
-                    <div class="img-content">
-                        <h5 class="gradient">Cantinho do Café</h5>
-                        <div class="cont-icons">
-                            <a href="https://github.com/Amani-Sena/Cantinho-do-cafe" target="_blank"><i class="fa-brands fa-github gradient links"></i></a>
-                            <a href="https://amani-sena.github.io/Cantinho-do-cafe/" target="_blank"><i class="fa-solid fa-link gradient links"></i></a>
-                        </div>
-                        <div class="cont-icons">
-                            <i class="fa-brands fa-html5 gradient"></i>
-                            <i class="fa-brands fa-sass gradient"></i>
-                            <i class="fa-brands fa-js gradient"></i>
-                        </div>
+                <div class="work-demo">
+                    <div class="work-img" id="simple-cat"></div>
+                    <div class="work-info">
+                        <h1>Simple Cat</h1>
+                        <a href="https://simplecat.amanidev.com/" target="_blank" class="nav-link">Visit the website ></a>
+                        <p>Scss, Javascript, Laravel, Livewire, Filament, MySQL</p>
+                        <p class="progress progress-p">In progress...</p>
                     </div>
                 </div>
+
+                <div class="work-demo">
+                    <div class="work-img" id="amanidev"></div>
+                    <div class="work-info">
+                        <h1>amaniDev</h1>
+                        <a href="https://amanidev.com/" target="_blank" class="nav-link">Visit the website ></a>
+                        <p>Scss, Javascript, PHP, Locomotive Scroll</p>
+                        <p class="progress progress-f">In progress...</p>
+                    </div>
+                </div>
+
             </div>
 
-            <!--<div class="portfolio-cont-img">
-                <div class="con-img-cont">
-                    <a href="https://amani-sena.github.io/TecBlog/" target="_blank"><img src="img/tecblog-display.jpg" alt=""></a>
-                    <div class="img-content">
-                        <h5 class="gradient">TecBlog</h5>
-                        <div class="cont-icons">
-                            <a href="https://github.com/Amani-Sena/TecBlog" target="_blank"><i class="fa-brands fa-github gradient links"></i></a>
-                            <a href="https://amani-sena.github.io/TecBlog/" target="_blank"><i class="fa-solid fa-link gradient links"></i></a>
-                        </div>
-                        <div class="cont-icons">
-                            <i class="fa-brands fa-html5 gradient"></i>
-                            <i class="fa-brands fa-sass gradient"></i>
-                            <i class="fa-brands fa-js gradient"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
         </section>
 
-        <footer class="footer" id="footer">
-            <div class="footer-row">
-                <h2 class="title-footer gradient" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" id="footerTitle">Dando vida a sua imaginação com precisão e paixão.</h2>
-                <div class="contact" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <h3 class="gradient" id="footerContact">Contato</h3>
-                    <div class="contact-info">
-                        <a href="mailto:amani.sena955@gmail.com" target="_blank"><i class="fa-regular fa-envelope gradient"></i></a><em>amani.sena955@gmail.com</em>
+        <section class="help" data-scroll-section>
+            <h2 id="help_title">I can help you with...</h2>
+            <div class="help-container">
+                <div class="help-item">
+                    <div class="help-item-header">
+                        <span>1</span>
+                        <div class="div-line"></div>
+                        <h3>Design</h3>
                     </div>
-                    <div class="contact-info">
-                        <a href="https://api.whatsapp.com/send?phone=5521970600875" target="_blank"><i class="fa-brands fa-whatsapp gradient"></i><em>+55 (21) 97060-0875</em></a> 
+                    <p id="help_text_design">With a solid background in website design, I deliver beautiful, uncomplicated and user-friendly interfaces.</p>
+                </div>
+
+                <div class="help-item">
+                    <div class="help-item-header">
+                        <span>2</span>
+                        <div class="div-line"></div>
+                        <h3 id="help_development">Development</h3>
                     </div>
-                    <div class="contact-info">
-                        <a href="https://t.me/+5521970600875" target="_blank"><i class="fa-brands fa-telegram gradient"></i><em>+55 (21) 97060-0875</em></a> 
+                    <p id="help_text_development">I develop scalable, responsive and fully customized websites, adapted to the needs of each client. My focus is on simplifying the development process, showing that what is functional and beautiful doesn't have to be complicated!</p>
+                </div>
+
+                <div class="help-item">
+                    <div class="help-item-header">
+                        <span>3</span>
+                        <div class="div-line"></div>
+                        <h3 id="help_full">Full Package</h3>
                     </div>
-                    <div class="contact-info">
-                        <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github gradient"></i><em>Github</em></a> 
-                    </div>
-                    <div class="contact-info">
-                        <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin gradient"></i><em>Linkedin</em></a> 
-                    </div>
+                    <p id="help_text_full">A complete website, taking care of all the stages from draft to implementation, with a collaborative approach that ensures close client involvement.</p>
                 </div>
             </div>
-            <img src="img/logo1.png" alt="logo amaniDev">
-            <p>© 2023 amaniDev.</p>
+        </section>
 
-            <div class="footer-up">
-                <a href="#hero"><i class="fa-solid fa-chevron-up"></i></a>
+
+        <section class="contact" id="contact" data-scroll-section>
+            <h2 class="pink" id="contact_title">Send me a message!</h2>
+            <p id="contact_text">Got a question or proposal, or just want to say hello? Go ahead.</p>
+            <div class="con-form">
+                <form id="form">
+                    <div class="form-row">
+                        <div class="single-input">
+                            <input type="text" id="name" name="name" required autocomplete="off">
+                            <label id="form_name">Your name</label>
+                        </div>
+
+                        <div class="single-input">
+                            <input type="email" id="email" name="email" required autocomplete="off">
+                            <label id="form_email">Your email</label>
+                        </div>
+                    </div>
+
+
+                    <textarea name="message" id="message" rows="7" minlength="10" placeholder="Your message"
+                        autocomplete="off"></textarea>
+
+
+                    <div class="buttons-form">
+                        <div class="form-btn">
+                            <button type="submit" class="btn" id="form_btn">
+                                <svg width="11.2rem" height="3.8rem" viewBox="0 0 181 61" class="border">
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span id="form_submit">Submit</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
             </div>
-            
+            <h5 id="form_message"></h5>
+
+        </section>
+
+        <footer class="footer-foot" data-scroll-section>
+            <div class="img-foot">
+                <a href="https://amanidev.com"><img src="img/logo2.webp" alt="logo amaniDev"></a>
+            </div>
+
+            <div class="icons-foot">
+                <a href="https://wa.me/+5521995753657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </footer>
-            
-        
+    </main>
+
+
+
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/locomotive-scroll.js"></script>
     <script src="js/loading.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/mobile-menu.js"></script>
-    <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous"></script>
-    <script src="js/swiper.js"></script>
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <script src="js/TypeIt.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/AOS.js"></script>
-    <script src="js/language-switcher.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/AOS.js" defer></script>
+    <script src="js/language-switcher.js" defer></script>
+    <script src="js/menu.js" defer></script>
+
 
 </body>
+
 </html>

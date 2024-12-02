@@ -1,0 +1,125 @@
+
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+
+    svg {
+      margin-top: 1.2rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      fill: none;
+      stroke: var(--pink);
+      stroke-dasharray: 150;
+      stroke-dashoffset: 150;
+      transition: 0.7s ease-in-out;
+    }
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11.2rem;
+    height: 3.8rem;
+    cursor: pointer;
+    background: var(--pink);
+    outline: none;
+    border: none;
+    transition: 1s ease-in-out;
+    color: var(--whiteF);
+    font-family: "coffee-light";
+    font-size: 1.1rem;
+  }
+  
+  .btn:hover {
+    transition: 0.5s ease-in-out;
+    background: transparent;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -180;
+    //-280
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    background-color: transparent;
+  }
+
+  //-------------------------------------------------
+
+
+  .buttons-about {
+    position: relative;
+    margin-top: 1.2rem;
+  }
+
+  .group-btn {
+    width: 188px;
+    height: 60px;
+    position: absolute;
+
+    svg {
+      margin-top: 0rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      fill: none;
+      stroke: var(--pink);
+      stroke-dasharray: 150;
+      stroke-dashoffset: 150;
+      transition: 0.7s ease-in-out;
+    }
+  }
+
+  .con-buttons-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.6rem;
+  }
+
+  //------------------------------------------------
+
+
+  .buttons-form {
+    position: relative;
+    margin-top: 4rem;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .form-btn {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+
+    svg {
+      margin-top: 0rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      fill: none;
+      stroke: var(--pink);
+      stroke-dasharray: 150;
+      stroke-dashoffset: 150;
+      transition: 0.7s ease-in-out;
+    }
+  }
+
+  .con-buttons-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.6rem;
+  }
+  

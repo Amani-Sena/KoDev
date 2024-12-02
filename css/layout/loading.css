@@ -10,13 +10,18 @@ div#preloader {
   flex-direction: column;
   background-color: var(--black);
   z-index: 99;
+  transition: 0.8s ease-in-out;
 }
 div#preloader img {
   width: 8rem;
 }
 
 .close-loading {
-  display: none !important;
+  transform: translateY(-120vh);
+}
+
+#main {
+  transition: 0.8s ease-in-out;
 }
 
 .load-9 {
@@ -37,7 +42,7 @@ div#preloader img {
   width: 2.1rem;
   height: 2.1rem;
   border-radius: 100%;
-  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  background-color: var(--pink);
 }
 
 .bubble-2 {
@@ -74,4 +79,27 @@ div#preloader img {
   50% {
     transform: scale(1);
   }
+}
+div#changer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--black);
+  z-index: 99;
+  transition: 0.8s ease-in-out;
+  transform: translateY(100vh);
+}
+
+.show-changer {
+  transform: translateY(0vh) !important;
+}
+
+.close-changer {
+  transform: translateY(-100vh) !important;
 }/*# sourceMappingURL=loading.css.map */
