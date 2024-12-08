@@ -1202,6 +1202,8 @@ div textarea:focus {
 }
 .hero img {
   width: 26rem;
+  height: 14.6rem;
+  aspect-ratio: 16/9;
 }
 .hero div {
   margin-top: 1rem;
@@ -1228,6 +1230,27 @@ div textarea:focus {
     transform: translateY(-6px);
   }
 }
+@media screen and (max-width: 900px) {
+  .hero img {
+    width: 20rem;
+    height: 8.6rem;
+  }
+}
+.section-404 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.section-404 h1 {
+  color: var(--pink);
+}
+.section-404 p {
+  color: var(--white);
+}
+
 .btn-menu {
   display: flex;
   flex-direction: column;
@@ -1400,6 +1423,7 @@ div textarea:focus {
 }
 .menu-contact-icons img {
   width: 2.5rem;
+  height: 2.5rem;
 }
 .menu-contact-icons img:hover {
   cursor: pointer;
@@ -1439,9 +1463,6 @@ div textarea:focus {
   }
 }
 @media screen and (max-width: 900px) {
-  .hero img {
-    width: 20rem;
-  }
   .btn-menu {
     right: 2rem;
   }

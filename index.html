@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon" />
     <title id="title_index">amaniDev - Fullstack Web Developer</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" rel="preload" onload="this.rel='stylesheet'">
     <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous" defer></script>
     <script src="js/form-submit.js" defer></script>
 </head>
@@ -30,7 +30,7 @@
     <header id="hero">
         <nav>
             <div class="btn-menu" id="btn-menu" onclick="openMenu('con-side-menu-op')" data-aos="fade-down"
-                data-aos-delay="1400" data-aos-duration="1400">
+                data-aos-delay="1600" data-aos-duration="1400">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
             </div>
@@ -65,8 +65,8 @@
 
                         <h5 id="language_menu">Change language</h5>
                         <div class="menu-contact-icons">
-                            <a href="#eng" data-reload><img src="img/eng.webp" alt="United States Flag" id="english"></a>
-                            <a href="#br" data-reload><img src="img/br.webp" alt="Brazilian Frag" id="portuguese"></a>
+                            <a href="#eng" data-reload><img src="img/eng.webp" loading="lazy" alt="United States Flag" id="english"></a>
+                            <a href="#br" data-reload><img src="img/br.webp" loading="lazy" alt="Brazilian Frag" id="portuguese"></a>
                         </div>
                     </div>
                 </div>
@@ -77,16 +77,16 @@
     <main id="main" data-scroll-container>
         <section class="bg-hero">
             <div class="con-video-hero">
-                <video autoplay muted loop id="video-hero" data-aos="zoom-out" data-aos-delay="1400"
+                <video autoplay muted loop id="video-hero" data-aos="zoom-out" data-aos-delay="1600"
                     data-aos-duration="1400" preload="auto" poster="img/poster_hero.webp">
                     <source src="img/bg_hero.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="hero">
-                <img src="img/logo2.webp" alt="Logo amaniDev" data-aos="zoom-in" data-aos-delay="1400"
+                <img src="img/logo2.webp" alt="Logo amaniDev - Desenvolvimento Web e Design" loading="eager" data-aos="zoom-in" data-aos-delay="1600"
                     data-aos-duration="1400">
 
-                <div data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1400">
+                <div data-aos="fade-up" data-aos-delay="1600" data-aos-duration="1400">
                     <div class="center">
                         <a class="btn" href="#contact">
                             <svg width="11.4rem" height="3.8rem" viewBox="0 0 182 61" class="border">

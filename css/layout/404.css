@@ -1,0 +1,14 @@
+.section-404 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.section-404 h1 {
+  color: var(--pink);
+}
+.section-404 p {
+  color: var(--white);
+}/*# sourceMappingURL=404.css.map */

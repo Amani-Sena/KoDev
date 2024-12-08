@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Desenvolvimento Web e Design: dando vida à sua imaginação com precisão e paixão. Vamos construir juntos!">
+    <meta name="author" content="Amani, amaniDev">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="amaniDev">
+    <meta property="og:description" content="Dando vida à sua imaginação com precisão e paixão.">
+    <meta property="og:image" content="https://amanidev.com/img/amanidev-og.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon" />
+    <title id="title_index">amaniDev - Fullstack Web Developer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" rel="preload" onload="this.rel='stylesheet'">
+    <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous" defer></script>
+    <script src="js/form-submit.js" defer></script>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header id="hero">
+        <nav>
+            <div class="btn-menu" id="btn-menu" onclick="openMenu('con-side-menu-op')" data-aos="fade-down"
+                data-aos-delay="1600" data-aos-duration="1400">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </div>
+        </nav>
+        <div class="con-side-menu-op close-side-menu" id="con-side-menu-op">
+            <div class="side-menu">
+                <div class="con-side-menu">
+                    <div class="menu-header">
+                        <h5>Menu</h5>
+                        <div class="menu-line"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <h1 id="home-menu"><a href="" id="home_menu">Home</a></h1>
+                        </li>
+                        <li>
+                            <a href="#section-about"><h1 id="about-menu">About me</h1></a>
+                        </li>
+                        <li>
+                            <h1><a href="https://amanidev.com/blog/" target="_blank" id="blog_menu">My blog</a></h1>
+                        </li>
+                    </ul>
+                    <div class="menu-contact">
+                        <h5 id="hello_menu">Say hello</h5>
+                        <div class="menu-contact-icons">
+                            <a href="https://wa.me/+5521995753657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+
+                        <h5 id="language_menu">Change language</h5>
+                        <div class="menu-contact-icons">
+                            <a href="#eng" data-reload><img src="img/eng.webp" loading="lazy" alt="United States Flag" id="english"></a>
+                            <a href="#br" data-reload><img src="img/br.webp" loading="lazy" alt="Brazilian Frag" id="portuguese"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" data-scroll-container>
+        <section class="section-404">
+            <h1>Erro 404</h1>
+            <p>Ops, parece que algo deu errado. :(</p>
+            <div class="buttons-form">
+                <div class="form-btn">
+                    <a href="/index.html">
+                    <button type="submit" class="btn" id="form_btn">
+                        <svg width="11.2rem" height="3.8rem" viewBox="0 0 181 61" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span id="form_submit">Voltar ao início</span>
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-foot" data-scroll-section>
+            <div class="img-foot">
+                <a href="https://amanidev.com"><img src="img/logo2.webp" alt="logo amaniDev"></a>
+            </div>
+
+            <div class="icons-foot">
+                <a href="https://wa.me/+5521995753657" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/locomotive-scroll.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/AOS.js" defer></script>
+    <script src="js/language-switcher.js" defer></script>
+    <script src="js/menu.js" defer></script>
+
+
+</body>
+
+</html>

@@ -187,6 +187,7 @@
 
   img {
     width: 2.5rem;
+    height: 2.5rem;
   }
 
   img:hover {
@@ -229,9 +230,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  .hero img {
-      width: 20rem;
-  }
 
   .btn-menu {
     right: 2rem;

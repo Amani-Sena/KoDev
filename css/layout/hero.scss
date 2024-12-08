@@ -33,6 +33,8 @@
   
     img {
       width: 26rem;
+      height: 14.6rem;
+      aspect-ratio: 16 / 9;
     }
   
     div {
@@ -61,5 +63,12 @@
     }
     to {
       transform: translateY(-6px);
+    }
+  }
+
+  @media screen and (max-width: 900px) { 
+    .hero img {
+      width: 20rem;
+      height: 8.6rem;
     }
   }
