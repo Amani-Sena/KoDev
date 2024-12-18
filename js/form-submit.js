@@ -27,6 +27,4 @@ form.addEventListener('submit', async function(event) {
         alert.innerHTML = '';
     }, 3000);
 
-    //const response = await data.json();
-    //console.log(response);
 });

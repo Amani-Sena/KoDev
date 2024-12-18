@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Desenvolvimento Web e Design: dando vida à sua imaginação com precisão e paixão. Vamos construir juntos!">
+    <meta name="author" content="Amani, amaniDev">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="amaniDev">
+    <meta property="og:description" content="Dando vida à sua imaginação com precisão e paixão.">
+    <meta property="og:image" content="https://amanidev.com/img/amanidev-og.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon" />
+    <title id="title_index">amaniDev - Fullstack Web Developer</title>
+    <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous" defer></script>
+    <script src="js/form-submit.js" defer></script>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <h1 class="title pink" id="loading">About me</h1>
+    </div>
+
+    <!--Header-->
+    <header id="hero">
+        <nav>
+            <div class="btn-menu" id="btn-menu" onclick="openMenu('con-side-menu-op')" data-aos="fade-down"
+                data-aos-delay="1600" data-aos-duration="1400">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </div>
+        </nav>
+        <div class="con-side-menu-op close-side-menu" id="con-side-menu-op">
+            <div class="side-menu">
+                <div class="con-side-menu">
+                    <div class="menu-header">
+                        <h5>Menu</h5>
+                        <div class="menu-line"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <h1 id="home-menu"><a href="/" id="home_menu">Home</a></h1>
+                        </li>
+                        <li>
+                            <a href="/about.html"><h1 id="about-menu">About me</h1></a>
+                        </li>
+                        <li>
+                            <h1><a href="https://amanidev.com/blog/" target="_blank" id="blog_menu">My blog</a></h1>
+                        </li>
+                    </ul>
+                    <div class="menu-contact">
+                        <h5 id="hello_menu">Say hello</h5>
+                        <div class="menu-contact-icons">
+                            <a href="https://wa.me/+5521970600875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+
+                        <h5 id="language_menu">Change language</h5>
+                        <div class="menu-contact-icons">
+                            <a href="#eng" data-reload><img src="img/eng.webp" loading="lazy" alt="United States Flag" id="english"></a>
+                            <a href="#br" data-reload><img src="img/br.webp" loading="lazy" alt="Brazilian Frag" id="portuguese"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" data-scroll-container>
+        <section class="section-about" data-scroll-section>
+            <div class="about-image">
+                <div class="about-container-image">
+                    <img src="img/Profile-Cut.jpg" alt="Foto Amani">
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>Hello World!</h2>
+                <p id="about_text_1">Me chamo Amani, sou Desenvolvedora Web Full Stack e Web Designer apaixonada por criar sites bonitos, elegantes e simples. Trago essa filosofia em cada projeto, com o objetivo que meus trabalhos alcancem e sirvam de inspiração para o máximo de pessoas!</p>
+                <p id="about_text_2">Possuo um blog onde tento escrever com frequência com o intuito de ajudar profissionais que estão entrando agora na área, focando nas dificuldades comuns que são encontradas no início da carreira.</p>
+            </div>
+        </section>
+
+        <section class="section-qualities" data-scroll-section>
+            <div class="qualities-title">
+                <h2 id="qualities_title">Dando vida a sua imaginação com precisão e paixão</h2>
+            </div>
+            <div class="qualities-topics">
+                <div class="qualities-topics-item">
+                    <i class="fa-solid fa-bezier-curve"></i>
+                    <h4>UX/UI</h4>
+                    <p id="text_ux">Formada em Web Design e sou extremamente comprometida em entregar a melhor experiência visual para meus clientes.</p>
+                </div>
+                <div class="qualities-topics-item">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <h4 id="qualities_title_item">Blogueira</h4>
+                    <p id="text_writer">Acredito que compartilhar conhecimento e aprendizado pode mudar vidas.</p>
+                </div>
+                <div class="qualities-topics-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h4 id="qualities_title_item_5">Clean Code</h4>
+                    <p id="text_code">Sempre sigo as melhores práticas de desenvolvimento, focando em escrever códigos limpos e descomplicados.</p>
+                </div>
+                <div class="qualities-topics-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h4 id="qualities_title_item_2">Desenvolvedora Web</h4>
+                    <p id="text_developer">Com 3 anos de experiência desenvolvendo aplicações web, posso garantir a qualidade que seu projeto precisa.</p>
+                </div>
+                <div class="qualities-topics-item">
+                    <i class="fa-regular fa-comments"></i>
+                    <h4 id="qualities_title_item_3">Transparência</h4>
+                    <p id="text_transparency">Meu processo de desenvolvimento visa a transparência para o cliente, onde o mesmo acompanha do início ao fim.</p>
+                </div>
+                <div class="qualities-topics-item">
+                    <i class="fa-solid fa-award"></i>
+                    <h4 id="qualities_title_item_4">Garantia</h4>
+                    <p id="text_guarantee">Todas as minhas entregas possuem garantia de 90 dias contra eventuais problemas técnicos. garantindo mais segurança para o cliente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact" data-scroll-section>
+            <h2 class="pink" id="contact_title">Send me a message!</h2>
+            <p id="contact_text">Got a question or proposal, or just want to say hello? Go ahead.</p>
+            <div class="con-form">
+                <form id="form">
+                    <div class="form-row">
+                        <div class="single-input">
+                            <input type="text" id="name" name="name" required autocomplete="off">
+                            <label id="form_name">Your name</label>
+                        </div>
+
+                        <div class="single-input">
+                            <input type="email" id="email" name="email" required autocomplete="off">
+                            <label id="form_email">Your email</label>
+                        </div>
+                    </div>
+
+
+                    <textarea name="message" id="message" rows="7" minlength="10" placeholder="Your message"
+                        autocomplete="off"></textarea>
+
+
+                    <div class="buttons-form">
+                        <div class="form-btn">
+                            <button type="submit" class="btn" id="form_btn">
+                                <svg width="11.2rem" height="3.8rem" viewBox="0 0 181 61" class="border">
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span id="form_submit">Submit</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <h5 id="form_message"></h5>
+
+        </section>
+
+        <footer class="footer-foot" data-scroll-section>
+            <div class="img-foot">
+                <a href="https://amanidev.com"><img src="img/logo2.webp" alt="logo amaniDev"></a>
+            </div>
+
+            <div class="icons-foot">
+                <a href="https://wa.me/+5521970600875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/locomotive-scroll.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/AOS.js" defer></script>
+    <script src="js/language-switcher-about.js" defer></script>
+    <script src="js/menu.js" defer></script>
+
+
+</body>
+
+</html>

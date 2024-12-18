@@ -1,0 +1,159 @@
+.section-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    min-height: 100vh;
+}
+
+
+.about-container-image {
+    display: flex;
+    width: 26rem;
+    height: 26rem;
+    max-width: 30rem;
+    max-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--pink);
+    
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    h2 {
+        color: var(--pink);
+        text-align: left;
+    }
+
+    p {
+        color: var(--white);
+        text-align: left;
+        max-width: 44rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.section-qualities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.qualities-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    margin-bottom: 6rem;
+
+    h2 {
+        color: var(--pink);
+        text-align: left;
+        max-width: 46rem;
+    }
+}
+
+.qualities-topics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 1.6rem;
+    row-gap: 4rem;
+    width: 80%;
+}
+
+.qualities-topics-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.6rem;
+
+    i {
+        color: var(--pink);
+        font-size: 2.4rem;
+    }
+
+    h4 {
+        color: var(--pink);
+        text-align: left;
+    }
+
+    p {
+        color: var(--white);
+        max-width: 26rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-about {
+        flex-direction: column;
+    }
+
+    .about-container-image {
+        display: flex;
+        width: 18rem;
+        height: 18rem;
+        max-width: 22rem;
+        max-height: 22rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: var(--pink);
+        
+    
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .about-text {
+    
+        p {
+            color: var(--white);
+            text-align: left;
+            max-width: 20rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .qualities-topics {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6);
+        gap: 1.6rem;
+        row-gap: 4rem;
+        width: 80%;
+    }
+
+    .qualities-topics-item {
+        i {
+            color: var(--pink);
+            font-size: 2rem;
+        }
+    }
+
+
+}
