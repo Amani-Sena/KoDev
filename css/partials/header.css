@@ -54,7 +54,7 @@
 .side-menu {
   background-color: var(--black);
   border-left: 1px inset var(--pink);
-  width: 30vw;
+  width: 26vw;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -64,7 +64,6 @@
   right: 0;
   top: 0;
   z-index: 98;
-  min-width: 36.8rem;
 }
 
 .con-side-menu-op.show-side-menu {
@@ -215,7 +214,6 @@
   }
   .side-menu {
     width: 100%;
-    min-width: 100%;
   }
   .header-nav i {
     font-size: 1.9rem;

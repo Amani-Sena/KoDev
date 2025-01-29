@@ -131,6 +131,7 @@ div textarea:focus {
 
         h2 {
             font-size: 2.2rem;
+            text-align: center;
         }
     }
 
@@ -148,5 +149,11 @@ div textarea:focus {
         max-width: none;
         margin: 1.2rem 0;
         position: relative;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact {
+        margin-top: 8rem;
     }
 }

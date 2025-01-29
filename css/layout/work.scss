@@ -94,6 +94,10 @@
     background-image: url('../../img/amanidev-bg-2.webp');
 }
 
+#amanidev-blog {
+    background-image: url('../../img/amanidev.blog-bg-2.webp');
+}
+
 .progress {
     padding: 0.4rem 0.6rem;
     border-bottom: 1px inset var(--pink);
@@ -115,13 +119,6 @@
         max-width: 20rem;
         text-align: left;
         line-height: 1.6rem;
-    }
-
-    a:hover {
-        em {
-            transition: 0.4s;
-            margin-left: 0.1rem;
-        }
     }
 
     h1 {
@@ -194,6 +191,7 @@
 
     .work-title {
         width: 86%;
+        text-align: center;
         margin-right: 0;
     }
 
@@ -221,18 +219,13 @@
         padding-right: 0rem;
     
         h1 {
-            transition: 0.6s;
-            margin-bottom: 4rem;
             max-width: 20rem;
-            color: var(--white);
         }
-    
-        a {
-            color: var(--white);
-            font-size: 1.4rem;
-            margin-bottom: 4rem;
-            transition: 0.6s;
-            border-bottom: 1px inset var(--pink);
-        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .work {
+        margin-top: 8rem;
     }
 }
