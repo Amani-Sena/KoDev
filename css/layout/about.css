@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--pink);
+  border: 1px solid var(--pink);
 }
 .about-container-image img {
   width: 100%;
@@ -58,7 +58,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 80%;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 .qualities-title h2 {
   color: var(--pink);
@@ -98,6 +98,7 @@
 @media screen and (max-width: 900px) {
   .section-about {
     flex-direction: column;
+    padding-top: 5rem;
   }
   .about-container-image {
     display: flex;
@@ -108,7 +109,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: var(--pink);
   }
   .about-container-image img {
     width: 100%;
@@ -135,5 +135,12 @@
   .qualities-topics-item i {
     color: var(--pink);
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-about {
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
   }
 }/*# sourceMappingURL=about.css.map */

@@ -12,9 +12,6 @@ div#preloader {
   z-index: 99;
   transition: 0.8s ease-in-out;
 }
-div#preloader img {
-  width: 8rem;
-}
 
 .close-loading {
   transform: translateY(-120vh);
@@ -22,84 +19,4 @@ div#preloader img {
 
 #main {
   transition: 0.8s ease-in-out;
-}
-
-.load-9 {
-  margin-bottom: 3rem;
-}
-
-.spinner {
-  position: relative;
-  width: 4rem;
-  height: 4rem;
-  margin: 0 auto;
-}
-
-.bubble-1,
-.bubble-2 {
-  position: absolute;
-  top: 0;
-  width: 2.1rem;
-  height: 2.1rem;
-  border-radius: 100%;
-  background-color: var(--pink);
-}
-
-.bubble-2 {
-  top: auto;
-  bottom: 0;
-}
-
-.l-9 {
-  animation-delay: 1.44s;
-}
-
-.load-9 .spinner {
-  animation: loadingI 2s linear infinite;
-}
-
-.load-9 .bubble-1,
-.load-9 .bubble-2 {
-  animation: bounce 2s ease-in-out infinite;
-}
-
-.load-9 .bubble-2 {
-  animation-delay: -1s;
-}
-
-@keyframes loadingI {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes bounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-}
-div#changer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--black);
-  z-index: 99;
-  transition: 0.8s ease-in-out;
-  transform: translateY(100vh);
-}
-
-.show-changer {
-  transform: translateY(0vh) !important;
-}
-
-.close-changer {
-  transform: translateY(-100vh) !important;
 }/*# sourceMappingURL=loading.css.map */

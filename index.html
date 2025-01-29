@@ -13,24 +13,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/locomotive-scroll.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="img/logo2.webp" as="image" type="image/svg+xml">
     <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon" />
     <title id="title_index">amaniDev - Fullstack Web Developer</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" rel="preload" onload="this.rel='stylesheet'">
     <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous" defer></script>
     <script src="js/form-submit.js" defer></script>
+
+    <style>
+    </style>
 </head>
 
 <body>
 
     <div id="preloader">
-        <h1 class="title pink" id="loading">Home</h1>
+        <h1 class="pink" id="loading">Home</h1>
     </div>
 
     <!--Header-->
     <header id="hero">
         <nav>
-            <div class="btn-menu" id="btn-menu" onclick="openMenu('con-side-menu-op')" data-aos="fade-down"
-                data-aos-delay="1600" data-aos-duration="1400">
+            <div class="btn-menu" id="btn-menu" onclick="openMenu('con-side-menu-op')">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
             </div>
@@ -82,10 +84,9 @@
                 </video>
             </div>
             <div class="hero">
-                <img src="img/logo2.webp" alt="Logo amaniDev - Desenvolvimento Web e Design" loading="eager" data-aos="zoom-in" data-aos-delay="1600"
-                    data-aos-duration="1400">
+                <img src="img/logo2.webp" alt="Logo amaniDev - Desenvolvimento Web e Design" loading="eager">
 
-                <div data-aos="fade-up" data-aos-delay="1600" data-aos-duration="1400">
+                <div>
                     <div class="center">
                         <a class="btn" href="#contact">
                             <svg width="11.4rem" height="3.8rem" viewBox="0 0 182 61" class="border">
@@ -319,8 +320,6 @@
     <script src="js/locomotive-scroll.min.js"></script>
     <script src="js/locomotive-scroll.js"></script>
     <script src="js/loading.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="js/AOS.js" defer></script>
     <script src="js/language-switcher.js" defer></script>
     <script src="js/menu.js" defer></script>
 
