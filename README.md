@@ -11,7 +11,11 @@
 - **Backend:** PHP
 
 **Funcionalidades 🔥**
+
 ✅ Apresentação dos meus projetos
+
 ✅ Seção sobre mim e minha experiência na área de desenvolvimento
+
 ✅ Formulário de contato para facilitar a comunicação com clientes e parceiros
+
 ✅ Layout responsivo e otimizado para diferentes dispositivos
